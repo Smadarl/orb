@@ -108,32 +108,32 @@ func (g *Geometry) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	switch jg.Type {
-	case "Point":
+	switch strings.ToLower(jg.Type) {
+	case "point":
 		p := orb.Point{}
 		err = json.Unmarshal(jg.Coordinates, &p)
 		g.Coordinates = p
-	case "MultiPoint":
+	case "multipoint":
 		mp := orb.MultiPoint{}
 		err = json.Unmarshal(jg.Coordinates, &mp)
 		g.Coordinates = mp
-	case "LineString":
+	case "linestring":
 		ls := orb.LineString{}
 		err = json.Unmarshal(jg.Coordinates, &ls)
 		g.Coordinates = ls
-	case "MultiLineString":
+	case "multilinestring":
 		mls := orb.MultiLineString{}
 		err = json.Unmarshal(jg.Coordinates, &mls)
 		g.Coordinates = mls
-	case "Polygon":
+	case "polygon":
 		p := orb.Polygon{}
 		err = json.Unmarshal(jg.Coordinates, &p)
 		g.Coordinates = p
-	case "MultiPolygon":
+	case "multipolygon":
 		mp := orb.MultiPolygon{}
 		err = json.Unmarshal(jg.Coordinates, &mp)
 		g.Coordinates = mp
-	case "GeometryCollection":
+	case "geometrycollection":
 		g.Geometries = jg.Geometries
 	default:
 		return ErrInvalidGeometry
