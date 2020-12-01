@@ -3,7 +3,7 @@ package simplify
 import (
 	"testing"
 
-	"github.com/paulmach/orb"
+	"github.com/Smadarl/orb"
 )
 
 func TestSimplify(t *testing.T) {

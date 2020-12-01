@@ -1,8 +1,8 @@
 package simplify
 
 import (
-	"github.com/paulmach/orb"
-	"github.com/paulmach/orb/planar"
+	"github.com/Smadarl/orb"
+	"github.com/Smadarl/orb/planar"
 )
 
 var _ orb.Simplifier = &DouglasPeuckerSimplifier{}
