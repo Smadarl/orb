@@ -8,10 +8,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/paulmach/orb"
-	"github.com/paulmach/orb/encoding/mvt/vectortile"
-	"github.com/paulmach/orb/geojson"
-	"github.com/paulmach/orb/maptile"
+	"github.com/Smadarl/orb"
+	"github.com/Smadarl/orb/encoding/mvt/vectortile"
+	"github.com/Smadarl/orb/geojson"
+	"github.com/Smadarl/orb/maptile"
 )
 
 func TestMarshalMarshalGzipped_Full(t *testing.T) {

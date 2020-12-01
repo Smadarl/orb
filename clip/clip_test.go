@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/paulmach/orb"
+	"github.com/Smadarl/orb"
 )
 
 func TestInternalLine(t *testing.T) {

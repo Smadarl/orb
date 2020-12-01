@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/paulmach/orb"
+	"github.com/Smadarl/orb"
 )
 
 // A Feature corresponds to GeoJSON feature object

@@ -3,8 +3,8 @@ package resample
 import (
 	"testing"
 
-	"github.com/paulmach/orb"
-	"github.com/paulmach/orb/planar"
+	"github.com/Smadarl/orb"
+	"github.com/Smadarl/orb/planar"
 )
 
 func TestResample(t *testing.T) {

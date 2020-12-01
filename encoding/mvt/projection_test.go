@@ -3,8 +3,8 @@ package mvt
 import (
 	"testing"
 
-	"github.com/paulmach/orb/maptile"
-	"github.com/paulmach/orb/project"
+	"github.com/Smadarl/orb/maptile"
+	"github.com/Smadarl/orb/project"
 )
 
 func TestNonPowerOfTwoProjection(t *testing.T) {
